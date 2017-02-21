@@ -1,3 +1,4 @@
 rm -R test/
 rm list* 
-rm man*
+rm -R man.dir/
+rm man.txt
