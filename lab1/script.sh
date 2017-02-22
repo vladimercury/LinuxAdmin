@@ -1,4 +1,5 @@
 #!/bin/bash
+#homedir=~
 homedir=$PWD
 testdir=$homedir/test
 linksdir=$testdir/links
@@ -106,7 +107,7 @@ echo -e "String\n$(cat man.txt)" > man.txt
 echo -e "\nString2" >> man.txt
 
 echo === TASK 31 ===
-diff man.txt man.dir/man.txt > patch.diff
+diff -u man.txt man.dir/man.txt > patch.diff
 
 echo === TASK 32 ===
 mv patch.diff man.dir/
