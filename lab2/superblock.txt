@@ -1,0 +1,45 @@
+Filesystem volume name:   <none>
+Last mounted on:          <not available>
+Filesystem UUID:          caa371ea-8898-46a3-a359-819823ee5c84
+Filesystem magic number:  0xEF53
+Filesystem revision #:    1 (dynamic)
+Filesystem features:      has_journal ext_attr resize_inode dir_index filetype sparse_super large_file
+Filesystem flags:         signed_directory_hash 
+Default mount options:    user_xattr acl
+Filesystem state:         clean
+Errors behavior:          Continue
+Filesystem OS type:       Linux
+Inode count:              128016
+Block count:              512000
+Reserved block count:     25600
+Free blocks:              485301
+Free inodes:              128005
+First block:              1
+Block size:               1024
+Fragment size:            1024
+Reserved GDT blocks:      256
+Blocks per group:         8192
+Fragments per group:      8192
+Inodes per group:         2032
+Inode blocks per group:   254
+Filesystem created:       Tue Feb 28 22:02:40 2017
+Last mount time:          n/a
+Last write time:          Tue Feb 28 22:02:41 2017
+Mount count:              0
+Maximum mount count:      -1
+Last checked:             Tue Feb 28 22:02:40 2017
+Check interval:           0 (<none>)
+Reserved blocks uid:      0 (user root)
+Reserved blocks gid:      0 (group root)
+First inode:              11
+Inode size:	          128
+Journal inode:            8
+Default directory hash:   half_md4
+Directory Hash Seed:      ebe010ff-c910-4510-aedb-bb2b424825a4
+Journal backup:           inode blocks
+Journal features:         (none)
+Journal size:             8M
+Journal length:           8192
+Journal sequence:         0x00000001
+Journal start:            0
+
