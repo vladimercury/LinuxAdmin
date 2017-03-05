@@ -7,8 +7,15 @@ fi
 
 # definitions
 disk=/dev/sdb
+disk1="$disk"1
 log=log.txt
+newdisk=/mnt/newdisk
 
 # delete partition
 echo -e "d\n\nw" | fdisk $disk > $log
 echo Removed first partition from $disk
+
+# unmount
+umount $newdisk
+rm /root/newdisk
+rm -r $newdisk
