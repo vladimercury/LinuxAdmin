@@ -26,6 +26,9 @@ mkfs.ext3 -Fb 1024 $disk1
 # task 3
 dumpe2fs -h $disk1 > superblock.txt
 
+# task 4
+tune2fs -i 2m -c 2 $disk1
+
 # task 5
 mkdir $newdisk
 mount $disk1 $newdisk
@@ -58,4 +61,4 @@ mount.cifs $rain $share
 
 # task 13
 # I DON'T KNOW IF IT WORKS
-echo $rain $share cifs guest,iocharset=utf8 0 0 >> /etc/fstab
+echo $rain $share cifs ro,guest,iocharset=utf8 0 0 >> /etc/fstab
