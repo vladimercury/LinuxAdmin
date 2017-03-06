@@ -21,7 +21,7 @@ echo -e "n\np\n\n\n+500M\nw" | fdisk $disk > $log
 echo Created a 500M partition on $disk
 
 # task 2
-mkfs.ext3 -Fb 1024 $disk1
+mkfs.ext3 -b 1024 $disk1
 
 # task 3
 dumpe2fs -h $disk1 > superblock.txt
@@ -40,8 +40,7 @@ ln -s $newdisk /root/
 mkdir "$newdisk"/any
 
 # task 8
-uuid=$(blkid $disk1 | awk '{print $2}')
-echo $uuid $newdisk ext3 noexec,noatime 0 0 >> /etc/fstab
+echo $disk1 $newdisk ext3 noexec,noatime 0 0 >> /etc/fstab
 reboot
 
 # task 9
@@ -56,9 +55,7 @@ sudo e2fsck -n /dev/sdb1
 
 # task 11
 mkdir /mnt/share
-# I DON'T KNOW IF IT WORKS
-mount.cifs $rain $share
+mount.cifs $rain $share -o ro
 
 # task 13
-# I DON'T KNOW IF IT WORKS
-echo $rain $share cifs ro,guest,iocharset=utf8 0 0 >> /etc/fstab
+echo $rain $share cifs ro 0 0 >> /etc/fstab
